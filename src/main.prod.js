@@ -1,9 +1,11 @@
+// ==================== 发布 ================================
+
 // -----------------入口文件
 
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './plugins/element.js'
+// import './plugins/element.js'
 import TreeTable from 'vue-table-with-tree-grid'
 
 
@@ -14,10 +16,15 @@ import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 
 
+
 // -------------------------------------------------------------------------
 // 导入 NProgress 包对应的JS和CSS
 import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
+// 导入富文本编辑器包
+
+//** 包的css部分写在 public 的 index.html 里
+
+
 
 // 导入 axios 包
 import axios from 'axios'

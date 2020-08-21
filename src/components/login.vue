@@ -62,7 +62,7 @@ export default {
             // 登录成功发送请求
             const { data: res } = await this.$http.post('login', this.loginForm);
             // 提示信息
-            if(res.meta.status == 200) return this.$message.error('登录失败');
+            if(res.meta.status == !200) return this.$message.error('登录失败');  
             this.$message.success('登录成功');
             // 成功后给session中添加token值，跳转到主页
             // window.sessionStorage.setItem('token', res.data.token);
